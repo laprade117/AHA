@@ -2,4 +2,4 @@ pip
 scikit-image
 scikit-learn
 pytorch-lightning
-opencv-python
+opencv-python-headless
