@@ -3,3 +3,4 @@ scikit-image
 scikit-learn
 pytorch-lightning
 opencv-python-headless
+protobuf~=3.19.0
