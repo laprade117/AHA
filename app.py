@@ -1,5 +1,6 @@
-import wandb
+import os
 import glob
+import requests
 
 import numpy as np
 from PIL import Image
@@ -17,11 +18,12 @@ st.set_page_config(
 @st.cache
 def download_models():
     if len(glob.glob('models/*.ckpt')) != 5:
-        print('Downloading models from WandB...')
-        api = wandb.Api()
         for i in range(5):
-            artifact = api.artifact(f'willap/VenomAI-Haemorrhage-UNet-Final/unet_final_{i}:latest', type='U-Net Inference Models')
-            artifact.download(root='models/')
+            URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_final_{i}.ckpt'
+            response = requests.get(URL)
+            filename = f'models/unet_final_{i}.ckpt'
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
+            open(f'models/unet_final_{i}.ckpt', 'wb').write(response.content)
 
 if __name__ == '__main__':
     
