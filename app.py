@@ -18,6 +18,7 @@ st.set_page_config(
 @st.cache
 def download_models():
     if len(glob.glob('models/*.ckpt')) != 5:
+        print('Downloading models...')
         for i in range(5):
             URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_final_{i}.ckpt'
             response = requests.get(URL)

@@ -1,5 +1,4 @@
 pip
-wandb
 scikit-image
 scikit-learn
 pytorch-lightning
