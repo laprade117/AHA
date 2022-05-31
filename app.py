@@ -18,9 +18,9 @@ st.set_page_config(
 def download_models():
     if len(glob.glob('models/*.ckpt')) != 5:
         print('Downloading models from WandB...')
-        run = wandb.init()
+        api = wandb.Api()
         for i in range(5):
-            artifact = run.use_artifact(f'willap/VenomAI-Haemorrhage-UNet-Final/unet_final_{i}:latest', type='U-Net Inference Models')
+            artifact = api.artifact(f'willap/VenomAI-Haemorrhage-UNet-Final/unet_final_{i}:latest', type='U-Net Inference Models')
             artifact.download(root='models/')
 
 if __name__ == '__main__':
