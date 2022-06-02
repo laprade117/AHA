@@ -20,11 +20,11 @@ def download_models():
     if len(glob.glob('models/*.ckpt')) != 5:
         print('Downloading models...')
         for i in range(5):
-            URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_final_{i}.ckpt'
+            URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_inference_{i}.ckpt'
             response = requests.get(URL)
             filename = f'models/unet_final_{i}.ckpt'
             os.makedirs(os.path.dirname(filename), exist_ok=True)
-            open(f'models/unet_final_{i}.ckpt', 'wb').write(response.content)
+            open(f'models/unet_inference_{i}.ckpt', 'wb').write(response.content)
 
 if __name__ == '__main__':
     
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
         final_predictions = None
         for i in range(5):
-            model = unet.UNet.load_from_checkpoint(f'models/unet_final_{i}.ckpt')
+            model = unet.UNet.load_from_checkpoint(f'models/unet_inference_{i}.ckpt')
             predictions, windows = predictor.predict_image(model, image, apply_preprocessing=False)
             if i == 0:
                 final_predictions = predictions
