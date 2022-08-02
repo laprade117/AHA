@@ -35,7 +35,7 @@ if __name__ == '__main__':
     st.title('AI-assisted Haemorrhage Analysis')
 
     # uploaded_file = st.sidebar.file_uploader("hello") 
-    uploaded_file = st.sidebar.file_uploader("Upload an image with template", type=['.jpg','.png','.tif'], accept_multiple_files=False)
+    uploaded_file = st.sidebar.file_uploader("Upload an image with the template and black sheet of paper separating the mice. After uploading, wait a few seconds while the tool computes the severity scores.", type=['.jpg','.png','.tif'], accept_multiple_files=False)
     
     if uploaded_file is not None:
 
