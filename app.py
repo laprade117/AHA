@@ -15,16 +15,18 @@ st.set_page_config(
      initial_sidebar_state="expanded"
  )
 
-@st.cache
 def download_models():
-    if len(glob.glob('models/*.ckpt')) != 5:
-        print('Downloading models...')
-        for i in range(5):
-            URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_inference_{i}.ckpt'
-            response = requests.get(URL)
-            filename = f'models/unet_final_{i}.ckpt'
-            os.makedirs(os.path.dirname(filename), exist_ok=True)
-            open(f'models/unet_inference_{i}.ckpt', 'wb').write(response.content)
+   print('Downloading models...')
+   for i in range(5):
+       filename = f'models/unet_final_{i}.ckpt'
+       if os.path.exists(filename):
+          print(f'Inference model {i} is already downloaded. Skipping...')
+          continue
+       URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_inference_{i}.ckpt'
+       response = requests.get(URL)
+       os.makedirs(os.path.dirname(filename), exist_ok=True)
+       open(f'models/unet_inference_{i}.ckpt', 'wb').write(response.content)
+       print(f'Downloading inference model {i}...')
 
 if __name__ == '__main__':
     
