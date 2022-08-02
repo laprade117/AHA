@@ -2,4 +2,4 @@
 
 For an analysis and experimental code for this tool see the associated GitHub repository: [ALOHA-Experiments](https://github.com/laprade117/ALOHA-Experiments)
 
-We will have a permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs here: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/ALOHA/blob/main/ALOHA.ipynb)
+We will have a permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs here (requires Google Account): [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/ALOHA/blob/main/ALOHA.ipynb)
