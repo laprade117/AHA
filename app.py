@@ -16,17 +16,17 @@ st.set_page_config(
  )
 
 def download_models():
-   print('Downloading models...')
+#    print('Downloading models...')
    for i in range(5):
        filename = f'models/unet_inference_{i}.ckpt'
        if os.path.exists(filename):
-          print(f'Inference model {i} is already downloaded. Skipping...')
+#           print(f'Inference model {i} is already downloaded. Skipping...')
           continue
        URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_inference_{i}.ckpt'
        response = requests.get(URL)
        os.makedirs(os.path.dirname(filename), exist_ok=True)
        open(f'models/unet_inference_{i}.ckpt', 'wb').write(response.content)
-       print(f'Downloading inference model {i}...')
+#        print(f'Downloading inference model {i}...')
 
 if __name__ == '__main__':
     
