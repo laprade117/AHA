@@ -18,7 +18,7 @@ st.set_page_config(
 def download_models():
    print('Downloading models...')
    for i in range(5):
-       filename = f'models/unet_final_{i}.ckpt'
+       filename = f'models/unet_inference_{i}.ckpt'
        if os.path.exists(filename):
           print(f'Inference model {i} is already downloaded. Skipping...')
           continue
