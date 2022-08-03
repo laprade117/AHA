@@ -6,4 +6,4 @@ Additional information regarding the performance of the tool can also be found o
 
 We will hopefully have a more permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs (requires Google Account) here: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/ALOHA/blob/main/ALOHA.ipynb)
 
-We have also included an [example image](https://raw.githubusercontent.com/laprade117/ALOHA/main/example_image.jpg) for trying out the tool.
+We have included an example image for you to try out the tool with [here](https://raw.githubusercontent.com/laprade117/ALOHA/main/example_image.jpg).
