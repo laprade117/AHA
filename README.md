@@ -1,9 +1,15 @@
 # ALOHA - An AI-guided tool for the automatic assessment of venom-induced haemorrhage in mice
 
+We will hopefully have a more permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs (requires Google Account):
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/ALOHA/blob/main/ALOHA.ipynb)
+
+We have also included an example image for you to try the tool with [here](https://raw.githubusercontent.com/laprade117/ALOHA/main/example_image.jpg).
+
+<br/><br/>
+
 For the experimental code and raw data for this tool see the associated GitHub repository: [ALOHA-Experiments](https://github.com/laprade117/ALOHA-Experiments)
 
-Additional information regarding the performance of the tool can also be found on Weights and Biases: [![Open In WandB](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-28.svg)](https://wandb.ai/willap/VenomAI-Haemorrhage-UNet/reports/U-Net-Haemorrhage-Detection-Results--VmlldzoyMDkzODUy)
+Additional information regarding the performance of the tool can also be found on Weights and Biases: 
 
-We will hopefully have a more permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs (requires Google Account) here: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/ALOHA/blob/main/ALOHA.ipynb)
-
-We have included an example image for you to try out the tool with [here](https://raw.githubusercontent.com/laprade117/ALOHA/main/example_image.jpg).
+[![Open In WandB](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-28.svg)](https://wandb.ai/willap/VenomAI-Haemorrhage-UNet/reports/U-Net-Haemorrhage-Detection-Results--VmlldzoyMDkzODUy)
