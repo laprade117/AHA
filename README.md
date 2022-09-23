@@ -4,7 +4,7 @@ We will hopefully have a more permanent link to the tool in the near future. Cur
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/laprade117/AHA/blob/main/AHA.ipynb)
 
-We have also included an example image for you to try the tool with [here](https://raw.githubusercontent.com/laprade117/AHA/main/example_image.jpg).
+We have also included an example image for you to try the tool with [here](https://raw.githubusercontent.com/laprade117/AHA/main/example_image.png).
 
 <br/><br/>
 
