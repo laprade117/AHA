@@ -22,7 +22,7 @@ def download_models():
        if os.path.exists(filename):
 #           print(f'Inference model {i} is already downloaded. Skipping...')
           continue
-       URL = f'https://github.com/laprade117/venom-ai-haemorrhage-analysis-tool/releases/latest/download/unet_inference_{i}.ckpt'
+       URL = f'https://github.com/laprade117/AHA/releases/download/inference-models/unet_inference_{i}.ckpt'
        response = requests.get(URL)
        os.makedirs(os.path.dirname(filename), exist_ok=True)
        open(f'models/unet_inference_{i}.ckpt', 'wb').write(response.content)
@@ -34,7 +34,6 @@ if __name__ == '__main__':
 
     st.title('AI-assisted Haemorrhage Analysis')
 
-    # uploaded_file = st.sidebar.file_uploader("hello") 
     uploaded_file = st.sidebar.file_uploader("Upload an image with the template and black sheet of paper separating the mice. After uploading, wait a few seconds while the tool computes the severity scores.", type=['.jpg','.png','.tif'], accept_multiple_files=False)
     
     if uploaded_file is not None:
