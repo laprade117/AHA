@@ -1,6 +1,6 @@
 # AHA - An AI-guided tool for the automatic assessment of venom-induced haemorrhage in mice
 
-This repo contains the tool described in the paper [here](https://www.frontiersin.org/articles/10.3389/fitd.2022.1063640/full)
+This repo contains the tool described in the paper [here](https://www.frontiersin.org/articles/10.3389/fitd.2022.1063640/full).
 
 
 We will hopefully have a more permanent link to the tool in the near future. Currently, you can access and use the tool via Google Colabs (requires Google Account):
